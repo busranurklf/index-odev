@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 0;
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    height: 100%;
+    display: grid;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+  }
+
+/* MENÜ */
+
+   nav{
+    overflow: auto;
+    
+  }
+
+       /* logo */
+   .logo{
+    background-color: white;
+    list-style-type: none;
+    margin: auto;
+    margin-left: 12%;
+    padding: 24.5px 15px;
+    position: fixed;
+    top: 10%;
+   }
+        /*logo bitiş*/
+
+   nav ul{
+    background-color: white;
+    list-style-type: none;
+    margin: auto;
+    margin-left: 24%;
+    padding: 20px 15px;
+    position: fixed;
+    top: 10%;
+  }
+
+   nav ul li {
+    float: left;
+    min-width: 110px;
+  }
+
+   nav ul li a{
+    display: block;
+    padding: 20px 0;
+    color: rgb(68, 179, 101);
+    text-align: center;
+    padding-right: 2px;
+    font-weight: bold;
+  }
+
+   nav ul li a:hover{
+    color: rgb(132, 219, 158);
+  }
+
+   nav ul li .dp-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+   nav ul li .dp-content a {
+    padding-left: 25px;
+    border-bottom: 0.8px solid rgb(194, 194, 194);
+    color: rgb(68, 179, 101);
+    text-align: left;
+  }
+
+   nav ul li .dp-content a:last-child{
+    border-bottom: none;
+  }
+
+   nav ul li .dp-content a:hover{
+    color: rgb(132, 219, 158);
+  }
+
+   nav ul li.dropdown:hover .dp-content{
+    display: block;
+  }
+
+  .dropdown i{
+    margin-left: 7px;
+  }
+
+  /* Hamburger menü */
+
+  #menuToggle {
+    margin-top: 9px;
+    margin: 9px 35px;
+    display: block;
+    float: right;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    background: rgb(68, 179, 101);
+    border: 0;
+    border-radius: 50%;
+    text-align: center;
+  }
+  
+  .icon-bar {
+    display: block;
+    height: 2px;
+    background: #fff;
+    margin: 3px auto;
+    max-width: 50%;
+  }
+
+/* Header İçerik */
+
+.container{
+  position: relative;
+}
+
+.container h1, h2{
+  position: absolute;
+}
+
+.baslik_k{
+  text-align: center;
+  margin-left: 10%;
+  margin-top: 25%;
+  color: rgba(70, 88, 53, 0.6);
+  font-size: 2rem;
+}
+
+.baslik_b{
+  text-align: center;
+  margin-left: 10%;
+  margin-top: 28%;
+  color: rgb(65, 82, 49);
+  font-size: 5rem;
+}
+
+.baslik_b2{
+  text-align: center;
+  margin-left: 10%;
+  margin-top: 34%;
+  color: rgb(65, 82, 49);
+  font-size: 5rem;
+}
+
+.button_{
+ margin-top: 43%;
+ margin-left: 10%;
+}
+
+ .btn{
+  float:left;
+  margin-right: 10px;
+  margin-left: 4px;
+ }
+
+.btn2{
+  background-color: rgba(68, 179, 101, 0.808);
+  color: white;
+  font-size: 1rem;
+  padding: 20px 30px;
+  border-radius: 30px ;
+  border: 0
+}
+
+.btn3{
+  background-color: rgba(68, 179, 101, 0.445);
+  color: white;
+  font-size: 1rem;
+  padding: 20px 30px;
+  border-radius: 30px ;
+  border: 0
+}
+
+.btn2:hover, .btn3:hover{
+  background-color: rgb(64, 168, 95);
+}
+ 
+/* Responsive Ayarları */
+
+@media( max-width:1400px){
+  .logo{
+  display: none;
+}
+nav{
+  position: fixed;
+  margin: auto;
+}
+ul{
+  position: fixed;
+  left: 60%;
+  width: 10%;
+  height: 60vh;
+  text-align: center;
+}
+#menuToggle, .icon-bar {
+  display:none;
+}
+}
+
+
+@media (max-width: 950px){
+  nav{
+   position: fixed;
+   margin: auto;
+ }
+ 
+ ul{
+   position: fixed;
+   left: 65%;
+   width: 10%;
+   height: 20%;
+   height: 60vh;
+   text-align: center;
+ }
+
+ ul li a {
+ display: block;
+ padding: 10px 0;
+ color: rgb(68, 179, 101);
+ right: 30%;
+ }
+ }
